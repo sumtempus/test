@@ -365,14 +365,12 @@ LearnosityAmd.define(['jquery-v1.10.2'], (function ($) { 'use strict';
             }
             if (question.custom_type == 'notes_geogebra') {
                 const advanced = question.apptype == 'advanced';
+                console.log(defaultOptions,'defaultOptions');
                 Object.assign(defaultOptions, {
                     'appName': 'notes',
                     'showToolBar': !review,
                     'showMenuBar': false,
                     'allowStyleBar': true,
-                    'showZoomButtons': advanced,
-                    'showFullscreenButton': advanced,
-                    'enableUndoRedo': true,
                    'customToolbox': 'select,pen,shapes,text,ruler' + (advanced ? ',shapes,more' : ''),
                 });
             }
