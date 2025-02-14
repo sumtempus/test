@@ -372,6 +372,7 @@ LearnosityAmd.define(['jquery-v1.10.2'], (function ($) { 'use strict';
                     'showMenuBar': false,
                     'allowStyleBar': true,
                    'customToolbox': 'select,pen,shapes,text,ruler' + (advanced ? ',shapes,more' : ''),
+                    ...question.options,
                 });
             }
             if (question.custom_type == 'calculator_geogebra') {
