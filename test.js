@@ -365,7 +365,7 @@ LearnosityAmd.define(['jquery-v1.10.2'], (function ($) { 'use strict';
             }
             if (question.custom_type == 'notes_geogebra') {
                 const advanced = question.apptype == 'advanced';
-                console.log(defaultOptions,'defaultOptions');
+                console.log(defaultOptions,'defaultOptions', question);
                 Object.assign(defaultOptions, {
                     'appName': 'notes',
                     'showToolBar': !review,
